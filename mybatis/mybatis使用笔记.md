@@ -1,17 +1,8 @@
 # mybatis使用笔记
 
 [TOC]
-1. 启动报lambda错误
+1. mybatis and 和or连用
 
-```java
-Error parsing property name 'lambda$18'. Didn't start with 'is', 'get' or 's
-```
-
- 解决方式
-
-```java
- List<Test> test = this.list(queryWrapper); //使用this
-```
-
-
-
+   ```java
+   queryWrapper.and(wrapper->wrapper.in(User::getId,userIds).or().eq(User::getName,userName));
+   ```
