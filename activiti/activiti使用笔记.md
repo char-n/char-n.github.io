@@ -64,3 +64,25 @@ public class UUIDGenerator implements IdGenerator {
     }
 }
 ```
+
+### 2.任务监听器的使用
+
+1. 流程图中配置任务监听器
+
+   ```bash
+   1.使用eclipse的activiti设计工具在流程节点上选择Listeners--Execution listeners
+   2.Execution listeners的Type选择Delegate expression
+   3.具体的expression中使用${taskListener}(taskListener是监听器名称，首字母小写)
+   ```
+
+2. 编写监听器实现类
+
+   ```java
+   public class TaskListener implements ExecutionListener {
+       @Override
+       public void notify(DelegateExecution execution) {
+   	
+   	}
+   }
+   ```
+
