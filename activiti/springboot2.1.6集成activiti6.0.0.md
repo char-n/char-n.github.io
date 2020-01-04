@@ -3,7 +3,12 @@
 ### 1.pom配置
 
 ```xml
- <dependencies>
+<properties>
+        <java.version>1.8</java.version>
+        <activiti.version>6.0.0</activiti.version>
+</properties>
+
+<dependencies>
 	<!-- swagger api 生成器套件 -->
 	<dependency>
 	  <groupId>com.spring4all</groupId>
@@ -80,4 +85,6 @@
 	</dependency>
 </dependencies>
 ```
+
+
 
