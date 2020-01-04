@@ -6,3 +6,4 @@
    ```java
    queryWrapper.and(wrapper->wrapper.in(User::getId,userIds).or().eq(User::getName,userName));
    ```
+

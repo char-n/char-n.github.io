@@ -1,10 +1,12 @@
 ## activiti学习笔记
 
+[TOC]
+
 ### 1.主键重复问题
 
 背景：
 
-```java
+```xml
 在生产环境上部署的项目，某一天发现执行的办理任务的时候报错，报错内容如下：
 org.apache.ibatis.exceptions.PersistenceException: 
 ### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '90093' for key 'PRIMARY'
